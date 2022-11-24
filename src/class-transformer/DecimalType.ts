@@ -28,7 +28,7 @@ export const createDecimalFromObject = (decimalTO: DecimalTransferObject) =>
  *
  * @see https://github.com/unlight/prisma-graphql-type-decimal
  */
-const DecimalType = (): PropertyDecorator => {
+export const DecimalType = (): PropertyDecorator => {
   const transformFunction = ({ value }: TransformFnParams) =>
     Array.isArray(value)
       ? value.map(createDecimalFromObject)
@@ -39,5 +39,3 @@ const DecimalType = (): PropertyDecorator => {
     Transform(transformFunction)(target, propertyKey);
   };
 };
-
-export default DecimalType;

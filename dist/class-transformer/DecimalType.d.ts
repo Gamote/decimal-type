@@ -18,5 +18,5 @@ export declare const createDecimalFromObject: (decimalTO: DecimalTransferObject)
  *
  * @see https://github.com/unlight/prisma-graphql-type-decimal
  */
-declare const DecimalType: () => PropertyDecorator;
-export default DecimalType;
+export declare const DecimalType: () => PropertyDecorator;
+export {};

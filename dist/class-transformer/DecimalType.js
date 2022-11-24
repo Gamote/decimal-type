@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createDecimalFromObject = void 0;
+exports.DecimalType = exports.createDecimalFromObject = void 0;
 const runtime_1 = require("@prisma/client/runtime");
 const class_transformer_1 = require("class-transformer");
 /**
@@ -32,5 +32,5 @@ const DecimalType = () => {
         (0, class_transformer_1.Transform)(transformFunction)(target, propertyKey);
     };
 };
-exports.default = DecimalType;
+exports.DecimalType = DecimalType;
 //# sourceMappingURL=DecimalType.js.map
