@@ -1,0 +1,44 @@
+{
+  "name": "decimal-type",
+  "version": "2.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "David Gamote",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gamote/decimal-type.git"
+  },
+  "keywords": [
+    "decimal",
+    "decimals",
+    "nest",
+    "nestjs",
+    "graphql",
+    "type",
+    "class-transformer",
+    "scalar"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "peerDependencies": {
+    "graphql": ">=16",
+    "@prisma/client": ">=3.9",
+    "@nestjs/graphql": ">=10",
+    "class-transformer": ">=10"
+  },
+  "dependencies": {
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "graphql": "^16.6.0",
+    "@prisma/client": "^4.6.1",
+    "@nestjs/graphql": "^10.1.6",
+    "class-transformer": "^0.5.1"
+  }
+}
