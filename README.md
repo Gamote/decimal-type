@@ -38,4 +38,6 @@ export class NewTransactionInput {
 }
 ```
 
-> Info: If the `@DecimalType()` decorator is not used, `class-transformer` will not know how to transform the `Decimal` type returned by the `DecimalScalar` scalar into a new `Decimal` instance.
+> **NOTE**: Don't forget to register the `DecimalScalar` scalar with Nest.js. See [here](https://docs.nestjs.com/graphql/scalars) for more information.
+
+> **INFO**: If the `@DecimalType()` decorator is not used, `class-transformer` will not know how to transform the `Decimal` type returned by the `DecimalScalar` scalar into a new `Decimal` instance.
